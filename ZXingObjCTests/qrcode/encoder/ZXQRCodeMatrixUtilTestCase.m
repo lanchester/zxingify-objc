@@ -16,6 +16,7 @@
 
 #import "ZXQRCodeMatrixUtil.h"
 #import "ZXQRCodeMatrixUtilTestCase.h"
+#import "ZXingObjC.h"
 
 @implementation ZXQRCodeMatrixUtilTestCase
 
