@@ -204,7 +204,7 @@
 
 - (void)testBuildMatrix {
   // From http://www.swetake.com/qr/qr7.html
-  const int bytesLen = 26;
+#define bytesLen 26
   int8_t bytes[bytesLen] = {32, 65, 205, 69, 41, 220, 46, 128, 236,
     42, 159, 74, 221, 244, 169, 239, 150, 138,
     70, 237, 85, 224, 96, 74, 219, 61};
