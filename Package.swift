@@ -1,10 +1,14 @@
-// swift-tools-version:5.1
+// swift-tools-version:5.9
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "ZXingObjC",
+    platforms: [
+        .iOS(.v16),
+        .macOS(.v14)
+    ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
@@ -66,9 +70,6 @@ let package = Package(
                 .headerSearchPath("qrcode/multi"),
                 .headerSearchPath("qrcode/multi/detector"),
             ],
-            linkerSettings: [
-              .unsafeFlags(["-fprofile-instr-generate"])
-            ]
         )
     ]
 )

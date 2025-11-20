@@ -15,6 +15,7 @@
  */
 
 #import "ZXParsedReaderResultTestCase.h"
+#import "ZXingObjC.h"
 
 @implementation ZXParsedReaderResultTestCase
 

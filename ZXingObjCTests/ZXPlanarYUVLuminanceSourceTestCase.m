@@ -25,8 +25,8 @@ const int8_t YUV[] = {
   127, 127, 127, 127, 127, 127,
   127, 127, 127, 127, 127, 127,
 };
-const int COLS = 6;
-const int ROWS = 4;
+#define COLS 6
+#define ROWS 4
 static int8_t Y[COLS * ROWS];
 
 @implementation ZXPlanarYUVLuminanceSourceTestCase

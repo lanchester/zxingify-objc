@@ -32,20 +32,20 @@ static float ZX_UPC_EAN_MAX_INDIVIDUAL_VARIANCE = 0.7f;
  * Start/end guard pattern.
  */
 const int ZX_UPC_EAN_START_END_PATTERN_LEN = 3;
-const int ZX_UPC_EAN_START_END_PATTERN[ZX_UPC_EAN_START_END_PATTERN_LEN] = {1, 1, 1};
+const int ZX_UPC_EAN_START_END_PATTERN[3] = {1, 1, 1};
 
 /**
  * Pattern marking the middle of a UPC/EAN pattern, separating the two halves.
  */
 const int ZX_UPC_EAN_MIDDLE_PATTERN_LEN = 5;
-const int ZX_UPC_EAN_MIDDLE_PATTERN[ZX_UPC_EAN_MIDDLE_PATTERN_LEN] = {1, 1, 1, 1, 1};
+const int ZX_UPC_EAN_MIDDLE_PATTERN[5] = {1, 1, 1, 1, 1};
 
 /**
  * "Odd", or "L" patterns used to encode UPC/EAN digits.
  */
 const int ZX_UPC_EAN_L_PATTERNS_LEN = 10;
 const int ZX_UPC_EAN_L_PATTERNS_SUB_LEN = 4;
-const int ZX_UPC_EAN_L_PATTERNS[ZX_UPC_EAN_L_PATTERNS_LEN][ZX_UPC_EAN_L_PATTERNS_SUB_LEN] = {
+const int ZX_UPC_EAN_L_PATTERNS[10][4] = {
   {3, 2, 1, 1}, // 0
   {2, 2, 2, 1}, // 1
   {2, 1, 2, 2}, // 2
@@ -63,7 +63,7 @@ const int ZX_UPC_EAN_L_PATTERNS[ZX_UPC_EAN_L_PATTERNS_LEN][ZX_UPC_EAN_L_PATTERNS
  */
 const int ZX_UPC_EAN_L_AND_G_PATTERNS_LEN = 20;
 const int ZX_UPC_EAN_L_AND_G_PATTERNS_SUB_LEN = 4;
-const int ZX_UPC_EAN_L_AND_G_PATTERNS[ZX_UPC_EAN_L_AND_G_PATTERNS_LEN][ZX_UPC_EAN_L_AND_G_PATTERNS_SUB_LEN] = {
+const int ZX_UPC_EAN_L_AND_G_PATTERNS[20][4] = {
   {3, 2, 1, 1}, // 0
   {2, 2, 2, 1}, // 1
   {2, 1, 2, 2}, // 2
